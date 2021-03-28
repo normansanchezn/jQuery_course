@@ -8,21 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Script of jQuery -->
-    <script>
-        $(document).ready(function() {
-            $("#btn_hide_text").click(function() {
-                $("p").hide();
-            });
-        });
-
-
-        $(document).ready(function() {
-            $("#btn_hide_head").click(function () { 
-                $("#head").hide();
-             });
-        });
-
-    </script>
+    <script src="jquery.js"></script>
 
     <title>Introduction to jQuery</title>
 </head>
@@ -31,10 +17,14 @@
     <h2 id="head">This is a heading</h2>
 
     <p>This is a line of text</p>
-    <p>This a anoter line of text</p>
+    <p class="change">This a anoter line of text</p>
 
-    <button id="btn_hide_text">Hide text</button>
+    <button id="btn_hide_text"> Hide text </button>
 
-    <button id="btn_hide_head">Hide head for id</button>    
+    <button id="btn_hide_head"> Hide head for id </button>
+
+    <button class="creating"> Change something </button>
+
+    <button class="something"> Clicked </button>
 </body>
 </html>
